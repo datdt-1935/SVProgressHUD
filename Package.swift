@@ -22,6 +22,14 @@ let package = Package(
         .target(
             name: "SVProgressHUD",
             path: ".",
+            exclude: [
+                "Demo",
+                "SVProgressHUD-Framework",
+                "README.md",
+                "CHANGELOG.md",
+                "LICENSE",
+                "SVProgressHUD.podspec"
+            ],
             sources: ["SVProgressHUD"],
             publicHeadersPath: "SVProgressHUD/SVProgressHUD"),
     ]
